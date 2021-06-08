@@ -18,7 +18,7 @@ public class Helper {
         WebDriverWait wait = new WebDriverWait(webDriver, timeOut);
         wait.until(ExpectedConditions.elementToBeClickable(byElement)).click();
     }
-
+     //aktif sayfada klavyeden tuşa basılırmış gibi mesaj gönderme
     public void sendKeys(By byElement, String text) {
         WebDriverWait wait = new WebDriverWait(webDriver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(byElement)).sendKeys(text);
